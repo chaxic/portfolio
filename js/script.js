@@ -4,6 +4,9 @@ $(window).on("load", function() {
 	});
 	
 	$(".items").isotope({
+		itemSelector: ".portfolio-item",
+		layoutMode: "fitRows",
+		percentPosition: true,
 		filter: '*',
 		animationOptions: {
 			duration: 1500,
@@ -88,6 +91,9 @@ $(document).ready(function() {
 
 		const selector = $(this).data("filter");
 		$(".items").isotope({
+			itemSelector: ".portfolio-item",
+			layoutMode: "fitRows",
+			percentPosition: true,
 			filter: selector,
 			animationOptions: { 
 				duration: 1500, 
