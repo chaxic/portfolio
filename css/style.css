@@ -70,7 +70,7 @@ body {
 }
 
 .titleMessage .heading {
-	width: 80%;
+	width: 60%;
 	bottom: 50%;
 }
 
@@ -101,9 +101,18 @@ body {
 	color: #fff;
 }
 
+.skillsSection .col-md-12 {
+	margin-bottom: 30px;
+}
+
 .skill {
 	text-align: center;
 	margin-left: 10px;
+}
+
+
+.skill h4{
+	margin-top: 20px;
 }
 
 .chart {

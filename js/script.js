@@ -25,7 +25,7 @@ $(document).ready(function() {
 	var typed = new Typed(".typed", {
 		strings: ["Artist.", "Programmer.", "Game Developer."],
 		typeSpeed: 70,
-		loop: false,
+		loop: true,
 		startDelay: 1000,
 		showCursor: false
 	});
