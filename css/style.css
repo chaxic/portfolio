@@ -99,6 +99,9 @@ body {
 .aboutImage {
 	max-width: 100%;
 }
+.aboutText {
+	margin-top: 10px;
+}
 
 .skillsSection,
 .contactSection {
@@ -111,14 +114,38 @@ body {
 }
 
 .skill {
+	/*background: black;*/
 	text-align: center;
-	margin-left: 10px;
+	margin: 5px 5px;
 }
 
+@media (max-width: 576px) {
+	.chart { width: 120px; height: 120px }
+	.chart .percent { line-height: 120px; font-size: 28px; }
+}
 
 .skill h4{
 	margin-top: 20px;
 }
+
+.owl-dots { 
+	margin-top:12px; 
+	display: flex;
+	text-align:center; 
+	justify-content: center;}
+.owl-dot span { 
+	width:8px; 
+	height:8px; 
+	margin:5px 5px;
+	display:block; 
+	border-radius:50%; 
+	background:#fff; 
+	opacity:.5; }
+.owl-dot.active span {
+	width:12px; 
+	height:12px;
+	background:#fff; 
+	opacity:1; }
 
 .chart {
 	position: relative;
@@ -135,7 +162,7 @@ body {
 }
 
 .chart .percent {
-	color: #000;
+	color: #ffffff;
 	line-height: 152px;
 	display: inline-block;
 	font-size: 35px;

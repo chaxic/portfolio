@@ -36,9 +36,11 @@ $(document).ready(function() {
 	$('.owl-carousel').owlCarousel({
 		loop:true,
 		items: 4,
+		dotsEach: true,
+		nav: false,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			480:{
 				items:2
