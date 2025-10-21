@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var typed = new Typed(".typed", {
 		strings: ["Artist.", "Programmer.", "Game Developer."],
 		typeSpeed: 70,
-		loop: true,
+		loop: false,
 		startDelay: 1000,
 		showCursor: false
 	});
@@ -121,4 +121,21 @@ $(document).ready(function() {
 			body.removeClass("fixedNav");
 		}
 	}
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const heading = document.querySelector('.heading');
+  const subHeading = document.querySelector('.subHeading');
+
+  if (!heading || !subHeading) return;
+
+  const observer = new ResizeObserver(entries => {
+    for (let entry of entries) {
+      const height = entry.contentRect.height;
+      const minHeight = height > 72 ? height / 2 : 50;
+      subHeading.style.setProperty('--sub-min-height', `${minHeight}px`);
+    }
+  });
+
+  observer.observe(heading);
 });
