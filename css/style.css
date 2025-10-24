@@ -230,7 +230,7 @@ body {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
-	color: #4F565E;
+	color: #59c771;
 }
 
 .squareContent h3 {
@@ -255,19 +255,18 @@ body {
 
 .contactButton {
 	text-decoration: none;
-	color: #fff;
+	color: #59c771;
 	padding: 15px 20px;
 	display: inline-block;
 	margin-top: 20px;
-	border: 1px solid #fff;
+	border: 1px solid #59c771;
 	border-radius: 2px;
-	
 }
 
 .contactButton:hover {
 	text-decoration: none;
 	color: #4F565E;
-	background-color: #fff;
+	background-color: #59c771;
 }
 
 .filter a {
