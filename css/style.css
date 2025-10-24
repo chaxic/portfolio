@@ -1,8 +1,16 @@
 body {
 	font-size: 14px;
-	color: #333;
+	color: #ffffff;
 	background-color: #fff;
 	letter-spacing: 1px;
+}
+
+.primaryColor {
+	background-color: #303841;
+}
+
+.secondaryColor {
+	background-color: #4F565E;
 }
 
 .overlay {
@@ -121,7 +129,7 @@ body {
 
 .skillsSection,
 .contactSection {
-	background-color: #e74c3c;
+	/*background-color: #e74c3c;*/
 	color: #fff;
 }
 
@@ -197,7 +205,7 @@ body {
 	position: relative;
 	padding: 50px 15px 35px;
 	text-align: center;
-	border: 2px solid #444;
+	border: 2px solid #4F565E;
 	border-top: none;
 }
 
@@ -207,7 +215,7 @@ body {
 	position: absolute;
 	top: 0px;
 	width: 30%;
-	border-bottom: 2px solid #444;
+	border-bottom: 2px solid #4F565E;
 }
 
 .squareInnerContainer:before {
@@ -222,7 +230,7 @@ body {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
-	color: #e74c3c;
+	color: #4F565E;
 }
 
 .squareContent h3 {
@@ -242,7 +250,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #444;
+	color: #4F565E;
 }
 
 .contactButton {
@@ -258,14 +266,14 @@ body {
 
 .contactButton:hover {
 	text-decoration: none;
-	color: #e74c3c;
+	color: #4F565E;
 	background-color: #fff;
 }
 
 .filter a {
 	text-decoration: none;
 	color: #bdc3c7;
-	border: 1px solid #bdc3c7;
+	border: 1px solid #4F565E;
 	padding: 10px 18px;
 	display: block;
 }
@@ -276,8 +284,8 @@ body {
 }
 
 .filter .current {
-	background-color: #e74c3c;
-	border-color: #e74c3c;
+	background-color: #4F565E;
+	border-color: #4F565E;
 	color: #fff;
 }
 
@@ -457,7 +465,7 @@ body {
 }
 
 #navigation {
-	background-color: #e74c3c;
+	/*background-color: #e74c3c;*/
 	padding: 20px 10px;
 	z-index: 100;
 	width: 100%;
@@ -496,7 +504,7 @@ div.section {
 .loader {
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #303841;
 	position: fixed;
 	top: 0px;
 	left: 0px;
