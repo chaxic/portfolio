@@ -393,15 +393,15 @@ body {
 .items a {
 	width: 40px;
 	height: 40px;
-	background-color: #e74c3c;
+	background-color: #59c771;
 	position: relative;
 	display: inline-block;
-	
 	-webkit-transition: all 0.2s linear, 0.2s;
 	-moz-transition: all 0.2s linear, 0.2s;
 	-o-transition: all 0.2s linear, 0.2s;
 	-ms-transition: all 0.2s linear, 0.2s;
-	-transition: all 0.2s linear, 0.2s;
+	-
+	transition: all 0.2s linear, 0.2s;
 }
 
 .items .imageOverlay {
