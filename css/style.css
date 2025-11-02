@@ -9,9 +9,10 @@
   --accent: #59c771;
   --navbar-bg: #434344;
   --navbar-text: #000000;
+  --bg-overlay: rgba(245, 245, 247, 0.95);
   --link-color: #59c771;
-  --heading-color: #444445;
-  --paragraph-color: #444445;
+  --h-color: #444445;
+  --p-color: #444445;
 }
 
 /* 🌙 Dark theme */
@@ -25,9 +26,10 @@
   --accent: #59c771;
   --navbar-bg: #4f565e;
   --navbar-text: #ffffff;
+  --bg-overlay: rgba(48, 56, 65, 0.95);
   --link-color: #7fffb3;
-  --heading-color: #ffffff;
-  --paragraph-color: #ffffff;
+  --h-color: #ffffff;
+  --p-color: #ffffff;
 }
 
 
@@ -40,12 +42,12 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
+  color: var(--h-color);
 }
 
 /* Paragraphs and general text */
 p, li, span, a, div {
-  color: var(--paragraph-color);
+  color: var(--p-color);
 }
 
 
@@ -214,12 +216,12 @@ p, li, span, a, div {
 	margin:5px 5px;
 	display:block; 
 	border-radius:50%; 
-	background: var(--paragraph-color); 
+	background: var(--p-color); 
 	opacity:.5; }
 .owl-dot.active span {
 	width:12px; 
 	height:12px;
-	background: var(--paragraph-color); 
+	background: var(--p-color); 
 	opacity:1; }
 
 .chart {
@@ -237,7 +239,7 @@ p, li, span, a, div {
 }
 
 .chart .percent {
-	color: var(--heading-color);
+	color: var(--h-color);
 	line-height: 152px;
 	display: inline-block;
 	font-size: 35px;
@@ -602,6 +604,23 @@ p, li, span, a, div {
 section,
 div.section {
 	scroll-margin-top: 80px;
+}
+
+/*Portfolio Text*/
+.fancybox__dialog {
+  --heading-color: var(--p-color);
+  --paragraph-color: var(--p-color);
+}
+/*Portfolio BG Overlay*/
+.fancybox__backdrop {
+  --fancybox-backdrop-bg: var(--bg-overlay);
+  /*backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;*/
+}
+/*Portfolio Links Text*/
+.f-caption a {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .loader {
