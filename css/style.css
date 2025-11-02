@@ -21,9 +21,9 @@
 
   /* your dark variants */
   --primary-bg: #303841;
-  --secondary-bg: #4f565e;
+  --secondary-bg: #2B2B2B;
   --accent: #59c771;
-  --navbar-bg: #2B2B2B;
+  --navbar-bg: #4f565e;
   --navbar-text: #ffffff;
   --link-color: #7fffb3;
   --heading-color: #ffffff;
@@ -159,7 +159,7 @@ p, li, span, a, div {
 	color: var(--bs-body-color);
 	padding: 100px 0px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 	.section {
 		padding: 40px 0px;
 	}
@@ -168,8 +168,16 @@ p, li, span, a, div {
 .aboutImage {
 	max-width: 100%;
 }
-.aboutText {
-	margin-top: 10px;
+@media (max-width: 768px) {
+	.aboutImage {
+		border-radius: 20px;
+	}
+	.aboutText {
+		 margin-top: 40px; 
+	}
+	.aboutText h4{
+		margin-bottom: 16px;
+	}
 }
 
 .skillsSection,
@@ -248,7 +256,7 @@ p, li, span, a, div {
 	position: relative;
 	padding: 50px 15px 35px;
 	text-align: center;
-	border: 2px solid #4F565E;
+	border: 2px solid var(--navbar-bg);
 	border-top: none;
 }
 
@@ -258,7 +266,7 @@ p, li, span, a, div {
 	position: absolute;
 	top: 0px;
 	width: 30%;
-	border-bottom: 2px solid #4F565E;
+	border-bottom: 2px solid var(--navbar-bg);
 }
 
 .squareInnerContainer:before {
@@ -293,7 +301,7 @@ p, li, span, a, div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #4F565E;
+	color: var(--navbar-bg);
 }
 
 .contactButton {
@@ -460,6 +468,12 @@ p, li, span, a, div {
 	-o-transition: all 0.2s linear, 1s;
 	-ms-transition: all 0.2s linear, 1s;
 	-transition: all 0.2s linear, 1s;
+}
+
+@media (max-width: 768px) {
+	.item{
+		border-radius: 20px;
+	}
 }
 
 .items .item:hover .imageOverlay {
